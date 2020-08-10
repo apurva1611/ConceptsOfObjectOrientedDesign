@@ -19,22 +19,23 @@ Design Patterns Used
 Technologies Used:
 1.Java
 2.Java Swing
-3. Spring MVC
-4. MySQL
+3.Spring MVC
+4.MySQL
 
 # Architecture Explained
 1. App.java
-   Contains the main method and is called first when we start an application.
-   It instantiates MainJFrame(View) and Controller(MainController).
+   Contains the main method and is called first when we start an application.
+   It instantiates MainJFrame(View) and Controller(MainController).
   
 2. View 
-   Designed using Swing. Layout used is Card Layout.
+   Designed using Swing. Layout used is Card Layout.
  
 3. Controller
-   Whenever an event is dispatched then controller is called. For example: a  button is clicked. Validation are done in this part. Like if user want to see an student  he/she    should enter a valid id.
+   Whenever an event is dispatched then controller is called. For example: a  button is clicked. Validation are done in this part. Like if user want to see an student  he/she
+   should enter a valid id.
    
 4. MiddleWare
-   Controller calls the middleware. It takes the action like to add a student, delete a student and then call database MySQL to update the changes. Implemented using            Factory Design Pattern and Lazy Singleton Design Pattern.
+   Controller calls the middleware. It takes the action like to add a student, delete a student and then call database MySQL to update the changes. Implemented using             Factory Design Pattern and Lazy Singleton Design Pattern.
    
 5. Model 
    Classes that represent data. This data is then added to database.
